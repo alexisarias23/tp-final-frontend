@@ -280,6 +280,70 @@ form .text-info {
   margin-top: 10px;
 }
 
+.main-help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f5f6f8;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.h1-help {
+  color: #6cf3f8;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.h3-help {
+  color: #4a4a4a;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-size: 22px;
+  width: 100%;
+
+}
+
+.p-help {
+  background-color: #ffffff;
+  border-left: 3px solid #b3d9ff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin: 10px 0 20px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.text-info {
+  background-color: #8edafd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.text-info:hover {
+  background-color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+.text-info:active {
+  background-color: #0a58ca;
+  transform: translateY(0);
+}
+
 /* Resposive mínimo para mobile */
 @media (max-width: 480px) {
   .sidebar {
@@ -292,5 +356,34 @@ form .text-info {
 
   .popup {
     width: 80%;
+  }
+
+  .h1-help {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .h3-help {
+    font-size: 18px;
+    text-align: center;
+    border-left: none;
+    border-bottom: 3px solid #0d6efd;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  .p-help {
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .text-info {
+    font-size: 14px;
   }
 }
