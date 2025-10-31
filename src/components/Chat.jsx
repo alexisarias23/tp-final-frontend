@@ -65,7 +65,7 @@ export default function Chat() {
   return (
     <>
       {
-        showPopup === true && <section className="cont-popup">
+        showPopup === true && <section>
           <div className="popup">
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
